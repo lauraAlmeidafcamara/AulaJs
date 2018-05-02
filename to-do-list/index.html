@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>ToDo-List </title>
+	<link rel="icon" href="logo-fcamara.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+
+<body>
+		
+	<header>
+		<div class="container">
+			<h2> FCamara To-Do List</h2>
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<h2>Atividade em Sala</h2>
+			<label for="tab-filter">Buscar Lembretes:</label>
+			<input class="tab-filter" type="text" name="filter" placeholder="Digite aqui algo relacionado ao lembrete">
+			<table class="myTable">
+				<thead>
+					<tr>
+						<th>Lembretes</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- Adicione os lembretes aqui! -->
+				</tbody>
+			</table>
+			<p id="demo"></p>
+				</section>
+	</main>
+
+	<section class="container">
+		<h2>Adicionar novo lembrete</h2>
+		<ul></ul>
+		<form action="javascript:void(0);">
+			<div class="">
+				<label>Tipo:</label>
+			
+		<input id="btn-adicionar" type="text" placeholder="Digite aqui algum compromisso" class="field">
+                </div>
+            </form>
+            <button type="submit" onClick="adicionarLembrete()">Adicionar</button>
+	</section>
+	<script src="index.js"></script>
+	<script src="./js/post.js"></script>
+	<script src="./js/get.js"></script>
+	</body>
+</html>
